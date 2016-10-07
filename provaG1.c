@@ -38,7 +38,7 @@ void main()
 		//declara a variavel responsavel pela opção do usuário
 		int Opcao = 0;
 		
-		printf("\n\nEntre com um comando:");
+		printf("Entre com um comando:");
 		//solicita ao usuario que escolha uma das opcoes abaixo
 		printf("\n\n1:Criar novo registro\n2:Buscar registro\n3:Apagar registro\n4:Creditos\n5:Sair do programa\n\nOpcao: ");
 		scanf("%d",&Opcao);
@@ -168,13 +168,13 @@ void main()
 					while(1)
 					{	
 						//declaracao das variaveis
-						int codA, i, A = -1, Outra;
+						int codA, i, A = -1, outra;
 						
 						//limpa a tela
 						system("cls");
 												
 						//caso o usuário escolha um registro inválido
-						if(Outra==3)
+						if(outra==3)
 						//exibe mensagem na tela
 						printf("PARA VOLTAR DIGITE 666\n");
 						printf("\nAPAGAR REGISTROS\n");
@@ -183,10 +183,10 @@ void main()
 						fflush(stdin);
 						
 						//caso o usuario queira sair da opcao
-						if(codA = 666)
+						if(codA == 666)
 							{
 								system("cls");
-								Outra = 0;
+								outra = 0;
 								break;
 							}
 						
@@ -195,7 +195,7 @@ void main()
 							{
 								//exibe mensagem na tela
 								printf("\n\tNUMERO INVALIDO, DIGITE UM NUMERO VALIDO!\n\n");
-								Outra = 3;
+								outra = 3;
 								printf("\n\n");
 								system("pause");
 								system("cls");
